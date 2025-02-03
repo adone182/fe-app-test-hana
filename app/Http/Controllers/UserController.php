@@ -10,4 +10,12 @@ class UserController extends Controller
     {
         return view('user.index');
     }
+    function add()
+    {
+        return view('user.add');
+    }
+    function edit($user_id)
+    {
+        return view('user.edit', compact('user_id'));
+    }
 }
